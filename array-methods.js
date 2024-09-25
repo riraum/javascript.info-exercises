@@ -13,15 +13,17 @@
 
 // P.S. Hint: use split to split the string into an array, transform it and join back.
 function camelize(str) {
-  // convert to array, removing -
-  let splitArray = str.split("-");
-  // map first character and capitalize it
-  let mappedArray = splitArray.map(function (item) {
-    item.charAt(0).toUpperCase;
-  });
-  // convert array back to string
-  mappedArray.join("");
-  return mappedArray;
+  return (
+    str
+      // convert to array, removing -
+      .split("-")
+      // map first character and capitalize it
+      .map((word, index) =>
+        index == 0 ? word : word[0].toUpperCase() + word.slice(1)
+      )
+      // convert array back to string
+      .join("")
+  );
 }
 camelize("background-color");
 
