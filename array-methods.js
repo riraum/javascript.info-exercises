@@ -25,26 +25,18 @@ function camelize(str) {
       .join("")
   );
 }
-camelize("background-color");
-
-// array.forEach(function(item) => {
-//   item.charAt(0).toUpperCase;
-//   return array;
-// });
-
-// newArray[i] = newArray[i].charAt(0).toUpperCase() + newArray[i].substr(1);
-
 
 // asserts takes a function `fn` and its argument `arg` and compares the result to `want`.
-function assert(fn, arg, want){
-  let got = fn(arg)
-  console.assert(got == want, `Want ${want} but got ${got}`)
+function assert(fn, arg, want) {
+  let got = fn(arg);
+  console.assert(got == want, `Want ${want} but got ${got}`);
 }
 
 // E.g.
-assert(camelize, "", "")
-assert(camelize, "a", "a")
-assert(camelize, "a-b", "aB")
-assert(camelize, "-a-b", "AB")
-assert(camelize, "a-bc", "aBc")
+assert(camelize, "", "");
+assert(camelize, "a", "a");
+assert(camelize, "a-b", "aB");
+assert(camelize, "-a-b", "AB");
+assert(camelize, "a-bc", "aBc");
+assert(camelize, "background-color", "backgroundColor");
 // ...
