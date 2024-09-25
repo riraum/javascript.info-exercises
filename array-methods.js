@@ -12,19 +12,6 @@
 // camelize("-webkit-transition") == 'WebkitTransition';
 
 // P.S. Hint: use split to split the string into an array, transform it and join back.
-function camelize(str) {
-  return (
-    str
-      // convert to array, removing -
-      .split("-")
-      // map first character and capitalize it
-      .map((word, index) =>
-        index == 0 ? word : word[0].toUpperCase() + word.slice(1)
-      )
-      // convert array back to string
-      .join("")
-  );
-}
 
 // asserts takes a function `fn` and its argument `arg` and compares the result to `want`.
 function assert(fn, arg, want) {
