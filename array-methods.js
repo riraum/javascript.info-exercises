@@ -34,4 +34,17 @@ camelize("background-color");
 
 // newArray[i] = newArray[i].charAt(0).toUpperCase() + newArray[i].substr(1);
 
-//   array.map((item) => item.charAt(0).toUpperCase);
+
+// asserts takes a function `fn` and its argument `arg` and compares the result to `want`.
+function assert(fn, arg, want){
+  let got = fn(arg)
+  console.assert(got == want, `Want ${want} but got ${got}`)
+}
+
+// E.g.
+assert(camelize, "", "")
+assert(camelize, "a", "a")
+assert(camelize, "a-b", "aB")
+assert(camelize, "-a-b", "AB")
+assert(camelize, "a-bc", "aBc")
+// ...
