@@ -12,13 +12,16 @@
 // camelize("-webkit-transition") == 'WebkitTransition';
 
 // P.S. Hint: use split to split the string into an array, transform it and join back.
-function camelize(string) {
-  return string
-    .split("-")
-    .map((word, index) =>
-      index == 0 ? word : word[0].toUpperCase() + word.slice(1)
-    )
-    .join("");
+
+function camelize(str) {
+  let array = str.split("-");
+  for (let i = 1; i < array.length; i++) {
+    array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
+
+    // console.log(array);
+  }
+  return array.join("");
+  // console.log(str);
 }
 
 // asserts takes a function `fn` and its argument `arg` and compares the result to `want`.
@@ -27,7 +30,7 @@ function assert(fn, arg, want) {
   console.assert(got == want, `Want ${want} but got ${got}`);
 }
 
-// E.g.
+// // E.g.
 assert(camelize, "", "");
 assert(camelize, "a", "a");
 assert(camelize, "a-b", "aB");
