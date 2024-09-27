@@ -15,6 +15,5 @@
 
 // alert( arr ); // 5,3,8,1 (not modified)
 function filterRange(arr, a, b) {
-  let resultArray = arr.filter((item) => item >= a && item <= b);
-  return resultArray;
+  return arr.filter((item) => item >= a && item <= b);
 }
