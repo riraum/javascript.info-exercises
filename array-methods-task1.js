@@ -19,8 +19,8 @@ function camelize(str) {
     array[i] = array[i].charAt(0).toUpperCase() + array[i].slice(1);
 
     // console.log(array);
-    str = array.join("");
   }
+  str = array.join("");
   return str;
   // console.log(str);
 }
