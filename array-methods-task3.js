@@ -20,6 +20,12 @@ function filterRangeInPlace(arr, a, b) {
       i--;
     }
   }
+  for (let j = 0; j < arr.length; j++) {
+    if (arr[j] < a) {
+      arr.splice(j, 1);
+      j--;
+    }
+  }
 }
 console.log(arr);
 // doesn't work, as it creates a new array
