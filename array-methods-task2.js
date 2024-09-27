@@ -14,4 +14,4 @@
 // alert( filtered ); // 3,1 (matching values)
 
 // alert( arr ); // 5,3,8,1 (not modified)
-function filterRange(arr) {}
+function filterRange(arr, a, b) {}
