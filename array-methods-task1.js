@@ -20,8 +20,7 @@ function camelize(str) {
 
     // console.log(array);
   }
-  str = array.join("");
-  return str;
+  return array.join("");
   // console.log(str);
 }
 
