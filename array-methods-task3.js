@@ -14,6 +14,13 @@ filterRangeInPlace(arr, 1, 4);
 
 // alert( arr ); // [3, 1]
 function filterRangeInPlace(arr, a, b) {
-  arr = arr.filter((item) => item >= a && item <= b);
-  console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > b) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
 }
+console.log(arr);
+// doesn't work, as it creates a new array
+// arr = arr.filter((item) => item >= a && item <= b);
