@@ -12,3 +12,4 @@
 // filterRangeInPlace(arr, 1, 4); // removed the numbers except from 1 to 4
 
 // alert( arr ); // [3, 1]
+function filterRangeInPlace(arr, a, b) {}
