@@ -14,4 +14,7 @@
 // alert( filtered ); // 3,1 (matching values)
 
 // alert( arr ); // 5,3,8,1 (not modified)
-function filterRange(arr, a, b) {}
+function filterRange(arr, a, b) {
+  let resultArray = arr.filter((item) => item >= a && item <= b);
+  return resultArray;
+}
