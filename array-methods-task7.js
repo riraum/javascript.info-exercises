@@ -13,4 +13,4 @@ let users = [john, pete, mary];
 
 // Own code
 let names = [john.name, pete.name, mary.name].join(", ");
-console.log(names); // John, Pete, Mary
+// console.log(names); // John, Pete, Mary
