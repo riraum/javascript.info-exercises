@@ -10,8 +10,8 @@ let pete = { name: "Pete", age: 30 };
 let mary = { name: "Mary", age: 28 };
 
 let users = [john, pete, mary];
-console.log(users);
+// console.log(users);
 
-let names = users.join(", ");
+let names = john.name + pete.name + mary.name;
 
 console.log(names); // John, Pete, Mary
