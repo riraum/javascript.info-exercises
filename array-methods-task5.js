@@ -14,8 +14,7 @@ console.log(arr); // HTML, JavaScript, CSS (no changes)
 
 // Function for task
 function copySorted(arr) {
-  copyArr = arr.slice();
-  console.log(copyArr);
-  copyArr.sort();
-  console.log(copyArr);
+  // console.log(copyArr);
+  let copyArr = arr.slice();
+  return copyArr.sort();
 }
