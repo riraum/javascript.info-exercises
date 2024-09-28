@@ -5,9 +5,11 @@
 
 // Create a function copySorted(arr) that returns such a copy.
 
-// let arr = ["HTML", "JavaScript", "CSS"];
+arr = ["HTML", "JavaScript", "CSS"];
 
-// let sorted = copySorted(arr);
+sorted = copySorted(arr);
 
-// alert( sorted ); // CSS, HTML, JavaScript
-// alert( arr ); // HTML, JavaScript, CSS (no changes)
+console.log(sorted); // CSS, HTML, JavaScript
+console.log(arr); // HTML, JavaScript, CSS (no changes)
+
+// Function for task
