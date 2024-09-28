@@ -7,18 +7,18 @@
 
 // For instance:
 
-// let arr = [5, 3, 8, 1];
+let arr = [5, 3, 8, 1];
 
-// filterRangeInPlace(arr, 1, 4);
+filterRangeInPlace(arr, 1, 4);
 // removed the numbers except from 1 to 4
 
 // alert( arr ); // [3, 1]
-function filterRangeInPlace(arr, a, b) {}
-
-// console.log(arr);
-// for (let i = 0; i < arr.length; i++) {
-//   if (arr[i] > b || arr[i] < a) {
-//     arr.splice(i, 1);
-//     i--;
-//   }
-// }
+function filterRangeInPlace(arr, a, b) {
+  // console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > b || arr[i] < a) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+}
