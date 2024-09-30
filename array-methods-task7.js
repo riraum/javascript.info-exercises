@@ -21,7 +21,7 @@ function arrayOfNames(array) {
     // newArray += newArray[i].split("");
     console.log(Array.isArray(newArray));
   }
-  console.log(newArray);
+  console.log(newArray.split(", "));
   console.log(Array.isArray(newArray));
 }
 
