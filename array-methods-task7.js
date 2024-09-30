@@ -15,10 +15,12 @@ let users = [john, pete, mary];
 // Not generic enough
 // let names = [john.name, pete.name, mary.name].join(", ");
 function arrayOfNames(array) {
+  let newArray = [];
   for (i = 0; i < array.length; i++) {
-    let newArray = array[i].name;
-    newArray = newArray.split(",");
+    newArray = array[i].name;
+    // newArray += newArray[i].split("");
     console.log(newArray);
+    console.log(Array.isArray(newArray));
   }
 }
 let names = arrayOfNames(users);
