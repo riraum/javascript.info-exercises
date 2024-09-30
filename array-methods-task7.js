@@ -17,11 +17,13 @@ let users = [john, pete, mary];
 function arrayOfNames(array) {
   let newArray = [];
   for (i = 0; i < array.length; i++) {
-    newArray = array[i].name;
+    newArray += array[i].name;
     // newArray += newArray[i].split("");
-    console.log(newArray);
     console.log(Array.isArray(newArray));
   }
+  console.log(newArray);
+  console.log(Array.isArray(newArray));
 }
+
 let names = arrayOfNames(users);
 console.log(names); // John, Pete, Mary
