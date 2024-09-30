@@ -12,5 +12,14 @@ let mary = { name: "Mary", age: 28 };
 let users = [john, pete, mary];
 
 // Own code
-let names = [john.name, pete.name, mary.name].join(", ");
-// console.log(names); // John, Pete, Mary
+// Not generic enough
+// let names = [john.name, pete.name, mary.name].join(", ");
+function arrayOfNames(array) {
+  for (i = 0; i < array.length; i++) {
+    let newArray = array[i].name;
+    newArray = newArray.split(",");
+    console.log(newArray);
+  }
+}
+let names = arrayOfNames(users);
+console.log(names); // John, Pete, Mary
