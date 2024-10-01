@@ -14,16 +14,22 @@ let users = [john, pete, mary];
 // Own code
 // Not generic enough
 // let names = [john.name, pete.name, mary.name].join(", ");
+// Create function, to run array through
 function arrayOfNames(array) {
-  let newArray = [];
+  // initialize empty array
+  let str = "";
+  // loop over array
   for (i = 0; i < array.length; i++) {
-    newArray += array[i].name;
-    // newArray += newArray[i].split("");
-    console.log(Array.isArray(newArray));
+    // reassign the concatenation of all array name: values to str
+    str += array[i].name;
   }
-  console.log(newArray.split(", "));
-  console.log(Array.isArray(newArray));
+  // return/convert str to an array
+  return str.split(", ");
+  // console.log(Array.isArray(newArray));
 }
-
+// assign names to be the function arrayOfNames and run users through it
 let names = arrayOfNames(users);
+// log output to console
 console.log(names); // John, Pete, Mary
+// check if result is an array
+console.log(Array.isArray(names));
