@@ -16,7 +16,7 @@ let users = [john, pete, mary];
 // let names = [john.name, pete.name, mary.name].join(", ");
 // Create function, to run array through
 function arrayOfNames(array) {
-  // initialize empty array
+  // initialize empty string
   let str = "";
   // loop over array
   for (i = 0; i < array.length; i++) {
