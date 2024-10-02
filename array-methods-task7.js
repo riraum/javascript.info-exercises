@@ -12,30 +12,19 @@ let mary = { name: "Mary", age: 28 };
 let users = [john, pete, mary];
 
 // Own code
-// Not generic enough
-// let names = [john.name, pete.name, mary.name].join(", ");
 // Create function, to run array through
 function arrayOfNames(array) {
-  // initialize empty array
-  let names = [];
-  // const entries = Object.values(users.name);
-  // console.log(entries);
-  // loop over array
-
+  // Initialize empty array
+  let inFunctionNames = [];
+  // loop over array of users
   for (let user of users) {
-    // reassign the concatenation of all array name: values to str
-    // names = names.push(array);
-    // names += array[i].name;
-    // names += array.push(i);
-    // names.push(i);
-    names.push(user.name);
-    // console.log(ar==ray.name);
+    // Push user.name to array of names
+    inFunctionNames.push(user.name);
   }
-  // return/convert str to an array
-  return names;
-  // console.log(Array.isArray(newArray));
+  // Return new array of names
+  return inFunctionNames;
 }
-// assign names to be the function arrayOfNames and run users through it
+// Assign names to be the function arrayOfNames and run array of users through it
 let names = arrayOfNames(users);
 // log output to console
 console.log(names); // John, Pete, Mary
