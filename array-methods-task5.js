@@ -9,8 +9,8 @@ arr = ["HTML", "JavaScript", "CSS"];
 
 sorted = copySorted(arr);
 
-console.log(sorted); // CSS, HTML, JavaScript
-console.log(arr); // HTML, JavaScript, CSS (no changes)
+// console.log(sorted); // CSS, HTML, JavaScript
+// console.log(arr); // HTML, JavaScript, CSS (no changes)
 
 // Function for task
 function copySorted(arr) {
