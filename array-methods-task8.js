@@ -7,24 +7,28 @@
 
 // For instance:
 
-let john = { name: "John", surname: "Smith", id: 1 };
-let pete = { name: "Pete", surname: "Hunt", id: 2 };
-let mary = { name: "Mary", surname: "Key", id: 3 };
+let mike = { name: "Mike", surname: "Smith", id: 1 };
+let ryan = { name: "Ryan", surname: "Hunt", id: 2 };
+let anna = { name: "Anna", surname: "Key", id: 3 };
 
-let users = [john, pete, mary];
+let users8 = [mike, ryan, anna];
+console.log(users8);
 
+// Own code
 let usersMapped =
   /* ... your code ... */
+  //
+  // users.map((item) => item.name);
 
   // /*
   // usersMapped = [
-  //   { fullName: "John Smith", id: 1 },
-  //   { fullName: "Pete Hunt", id: 2 },
-  //   { fullName: "Mary Key", id: 3 }
+  //   { fullName: "Mike Smith", id: 1 },
+  //   { fullName: "Ryan Hunt", id: 2 },
+  //   { fullName: "Anna Key", id: 3 }
   // ]
   // */
 
   alert(usersMapped[0].id); // 1
-alert(usersMapped[0].fullName); // John Smith
+alert(usersMapped[0].fullName); // Mike Smith
 
 // So, actually you need to map one array of objects to another. Try using => here. There’s a small catch.
