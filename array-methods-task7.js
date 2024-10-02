@@ -27,7 +27,7 @@ function arrayOfNames(array) {
 // Assign names to be the function arrayOfNames and run array of users through it
 let names = arrayOfNames(users);
 // log output to console
-console.log(names); // John, Pete, Mary
-// check if result is an array
-console.log(Array.isArray(names));
+// console.log(names); // John, Pete, Mary
+// // check if result is an array
+// console.log(Array.isArray(names));
 // console.log(users.name);
