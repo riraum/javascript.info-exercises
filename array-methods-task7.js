@@ -16,15 +16,23 @@ let users = [john, pete, mary];
 // let names = [john.name, pete.name, mary.name].join(", ");
 // Create function, to run array through
 function arrayOfNames(array) {
-  // initialize empty string
-  let str = "";
+  // initialize empty array
+  let names = [];
+  // const entries = Object.values(users.name);
+  // console.log(entries);
   // loop over array
-  for (i = 0; i < array.length; i++) {
+
+  for (let user of users) {
     // reassign the concatenation of all array name: values to str
-    str += array[i].name;
+    // names = names.push(array);
+    // names += array[i].name;
+    // names += array.push(i);
+    // names.push(i);
+    names.push(user.name);
+    // console.log(ar==ray.name);
   }
   // return/convert str to an array
-  return str.split(", ");
+  return names;
   // console.log(Array.isArray(newArray));
 }
 // assign names to be the function arrayOfNames and run users through it
@@ -33,3 +41,4 @@ let names = arrayOfNames(users);
 console.log(names); // John, Pete, Mary
 // check if result is an array
 console.log(Array.isArray(names));
+// console.log(users.name);
