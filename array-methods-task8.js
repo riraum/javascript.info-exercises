@@ -1,24 +1,30 @@
-// Sort users by age
+// Map to objects
 // importance: 5
 
-// Write the function sortByAge(users) that gets an array of objects with the age property and sorts them by age.
+// You have an array of user objects, each one has name, surname and id.
+
+// Write the code to create another array from it, of objects with id and fullName, where fullName is generated from name and surname.
 
 // For instance:
 
-let john = { name: "John", age: 25 };
-let pete = { name: "Pete", age: 30 };
-let mary = { name: "Mary", age: 28 };
+let john = { name: "John", surname: "Smith", id: 1 };
+let pete = { name: "Pete", surname: "Hunt", id: 2 };
+let mary = { name: "Mary", surname: "Key", id: 3 };
 
-let arr = [pete, john, mary];
+let users = [john, pete, mary];
 
-sortByAge(arr);
+let usersMapped =
+  /* ... your code ... */
 
-// // now: [john, mary, pete]
-alert(arr[0].name); // John
-alert(arr[1].name); // Mary
-alert(arr[2].name); // Pete
+  // /*
+  // usersMapped = [
+  //   { fullName: "John Smith", id: 1 },
+  //   { fullName: "Pete Hunt", id: 2 },
+  //   { fullName: "Mary Key", id: 3 }
+  // ]
+  // */
 
-// Own code
-function sortByAge(arr) {
-  arr.map((item) => item.age).sort();
-}
+  alert(usersMapped[0].id); // 1
+alert(usersMapped[0].fullName); // John Smith
+
+// So, actually you need to map one array of objects to another. Try using => here. There’s a small catch.
