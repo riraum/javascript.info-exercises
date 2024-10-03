@@ -25,19 +25,19 @@ let usersMapped =
   // return the object
   /* ... your code ... */
   //
-  users8.map((newName, oldId) => ({
-    fullName: newName.name + newName.surname,
-    id: oldId.id,
-  }));
+  // users8.map((newName, oldId) => ({
+  //   fullName: newName.name + newName.surname,
+  //   id: oldId.id,
+  // }));
 
-// /*
-// usersMapped = [
-//   { fullName: "Mike Smith", id: 1 },
-//   { fullName: "Ryan Hunt", id: 2 },
-//   { fullName: "Anna Key", id: 3 }
-// ]
-// */
-console.log(usersMapped);
+  // /*
+  // usersMapped = [
+  //   { fullName: "Mike Smith", id: 1 },
+  //   { fullName: "Ryan Hunt", id: 2 },
+  //   { fullName: "Anna Key", id: 3 }
+  // ]
+  // */
+  console.log(usersMapped);
 console.log(usersMapped[0].id); // 1
 console.log(usersMapped[0].fullName); // Mike Smith
 
