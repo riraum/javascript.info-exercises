@@ -16,9 +16,13 @@ console.log(users8);
 
 // Own code
 let usersMapped =
-  // Initialize another array of objects
-  // Take users8 array of objects, value of name and surname and put them in new variable fullName
+  // create a new empty object
 
+  // for each user in the array of users
+  //     generate the fullName by concatenating the user name and surname
+  //     insert it in the object, using the user id as the key
+
+  // return the object
   /* ... your code ... */
   //
   users8.map((newName, oldId) => ({
